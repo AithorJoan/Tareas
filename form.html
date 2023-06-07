@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>SUSCRIPCIÓN</title>
+	<link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+
+<div class="div-formulario">
+  <form action="/formulario.php" method="post">
+
+    <label for="name">
+      <input type="text" placeholder="NOMBRE" id="name" name="user_name"required>
+    </label>
+
+    <label for="surname">
+      <input type="text" placeholder="APELLIDO" id="name" name="user_surname" required>
+    </label>
+
+    <label for="birthday">
+      <input type="date"
+        name="birthday"
+        min="1906-01-01"
+        max="2007-01-01"
+        value="2007-01-01"
+        required
+      />
+    </label>
+    
+    <label for="mail">
+      <input type="email" placeholder="CORREO ELECTRONICO" id="mail" name="user_mail" required>
+    </label>
+
+    <label for="celphone">
+    <input type="tel" placeholder="xxx xxx xxx" id="celphone" name="celphone"
+        pattern="[0-9]{3} [0-9]{3} [0-9]{3}"
+        required>
+    </label>
+
+    <label for="opciones">
+      <select id="opciones" name="opciones" required>
+        <option value="">DEPARTAMENTOS</option>
+        <option value="1">Montevideo</option>
+        <option value="2">Canelones</option>
+        <option value="3">Artigas</option>
+        <option value="4">Cerro Largo</option>
+        <option value="5">Colonia</option>
+        <option value="6">Durazno</option>
+        <option value="7">Flores</option>
+        <option value="8">Florida</option>
+        <option value="9">Lavalleja</option>
+        <option value="10">Maldonado</option>
+        <option value="11">Paysandú</option>
+        <option value="12">Rio Negro</option>
+        <option value="13">Rivera</option>
+        <option value="14">Rocha</option>
+        <option value="15">Salto</option>
+        <option value="16">San José</option>
+        <option value="17">Soriano</option>
+        <option value="18">Tacuarembó</option>
+        <option value="19">Treinta y Tres</option>
+      </select>
+    </label>
+
+
+    <input type="radio" name="public" id="public1"  class="selec">
+    <label for="public1">MENSUAL</label>
+    <input type="radio" name="public" id="public0" class="selec">
+    <label for="public0">ANUAL</label>
+
+
+    <label for="musica">
+      <select id="musica" name="musicastyle" required>
+      <option value="">ESTILO MUSICAL FAVORITO</option>
+      <option value="1">RKT</option>
+      <option value="2">TANGO</option>
+      <option value="3">REAGUETÓN</option>
+      <option value="4">PASODOBLE</option>
+      <option value="5">CUMBIA</option>
+      <option value="6">POLKA</option>
+      </select>
+    </label>
+<div class="botones">
+    <button type="submit">ENVÍAR</button>
+
+    <button type="reset">LIMPIAR</button>
+
+</div>
+  </form>
+</div>
